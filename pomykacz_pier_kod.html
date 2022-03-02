@@ -1,0 +1,49 @@
+<textarea rows=52 cols=80>
+#include <cstdlib>
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ cout<<"podaj liczbe do sprawdzenia- ";
+ int pierwsza_pom;
+ int suma_pom;
+ int k=0;
+ cin>>pierwsza_pom;
+ cout<<"podaj druga liczbe do sprawdzenia- ";
+ int druga_pom;
+ int n=0;
+ cin>>druga_pom;
+ for(int i=2;i<=sqrt(pierwsza_pom);++i)
+ for(int i=2;i<=sqrt(druga_pom);++i)
+ {
+if ((pierwsza_pom) % i==0)
+if ((druga_pom) % i==0)
+{
+k=1;
+n=1;
+cout<<"liczba "<<pierwsza_pom<<" to nie jest liczba pierwsza jest podzielna przez "<<i<<", "<<druga_pom<<"tez nie jest pierwsza jest podzielna przez "<<i<<"\n";
+ }
+ }
+ {
+ if ( k==0);
+ if ( n==0);
+ suma_pom=(pierwsza_pom+druga_pom);
+ if (suma_pom%2==0)
+ {
+ cout<<"liczba "<<pierwsza_pom<<" to jest liczba pierwsza, "<<druga_pom<<" tez jest liczba pierwsza, ich suma wynosi "<<suma_pom<<", jest parzysta"<<"\n";
+}
+}
+{
+if ( k==0);
+if ( n==0);
+suma_pom=(pierwsza_pom+druga_pom);
+if (suma_pom%2==1)
+ {
+cout<<"liczba "<<pierwsza_pom<<" to jest liczba pierwsza, "<<druga_pom<<" tez jest liczba pierwsza, ich suma wynosi "<<suma_pom<<", jest nieparzysta"<<"\n";
+}
+}
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}
+</textarea>

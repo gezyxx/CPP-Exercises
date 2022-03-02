@@ -1,0 +1,24 @@
+<textarea rows=24 cols=60>
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    cout << "Podaj gorna granice obliczania sumy: ";
+    cin >> gora_;
+    int dol_pom;
+    cout << "Podaj dolna granice obliczania sumy: ";
+    cin >> dol_pom;
+    int suma_pom=0;
+    for(gora_pom;gora_pom<=dol_pom;gora_pom++)
+    {
+        if(gora_pom%2==0)
+            suma_pom+=gora_pom;
+    }
+    cout <<"suma= "<< suma_pom;
+ 
+ system("PAUSE");
+return EXIT_SUCCESS;
+}
+
+</textarea>

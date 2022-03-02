@@ -1,0 +1,27 @@
+<textarea rows=24 cols=60>
+#include <iostream>
+#include <cstdlib>
+int main() 
+{
+int n_pom;
+int silnia_pom=1;
+cout<<"n=";
+cin>>n_pom;
+if (n_pom==0)
+{
+	cout<<"n=1"<<endl;
+	cout<<"1!=1"<<endl;
+}
+else
+{
+	cout<<"n="<<n_pom<<endl;
+}
+for (i=1;i<=n_pom;i++)
+{
+silnia_pom=silnia_pom*i;
+}
+cout<<n_pom<<"!="<<silnia_pom<<endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+</textarea>

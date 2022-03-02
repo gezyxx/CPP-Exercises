@@ -1,0 +1,24 @@
+<textarea rows=24 cols=60>
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+int gora_pom;
+cout<<"podaj górną granicę obliczania sumy=";
+cin>>gora_pom;
+int dol_pom;
+cout<<"podaj dolną granicę obliczania sumy=";
+cin>>dol_pom;
+int suma_pom=0;
+for(int dzialanie=gora_pom;dzialanie<=dol_pom;dzialanie++)
+{
+suma_pom+=dzialanie;
+}
+cout<<"suma="<<suma_pom<<endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+</textarea>
